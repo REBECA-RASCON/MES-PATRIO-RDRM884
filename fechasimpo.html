@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
         }
-
+ 
         body {
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
             background-color: white;
@@ -17,21 +17,21 @@
             display: flex;
             flex-direction: column;
         }
-
+ 
        
         .header-verde {
             background-color: #008000;
             color: white;
             padding: 20px 0;
         }
-
+ 
         .header-verde h1 {
             margin: 0;
             font-size: 55px;
             font-weight: normal;
             letter-spacing: 2px;
         }
-
+ 
        
         .menu-rojo {
             background-color: #aa0000;
@@ -40,14 +40,23 @@
             justify-content: space-around;
             align-items: center;
         }
-
+ 
         .menu-rojo a {
             color: white;
             text-decoration: none;
             font-size: 20px;
             font-weight: normal;
         }
-
+ 
+        .menu-rojo a:hover {
+            text-decoration: underline;
+        }
+ 
+        .menu-rojo a.activo {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+ 
        
         .timeline-container {
             flex: 1;
@@ -57,7 +66,7 @@
             padding: 20px;
             overflow-x: auto;
         }
-
+ 
         .timeline {
             position: relative;
             width: 100%;
@@ -68,7 +77,7 @@
             align-items: center;
             padding: 180px 0;
         }
-
+ 
        
         .timeline-line {
             position: absolute;
@@ -78,7 +87,7 @@
             border-top: 3px dashed #700000;
             z-index: 1;
         }
-
+ 
         .mes-extremo {
             font-size: 22px;
             z-index: 2;
@@ -86,7 +95,7 @@
             padding: 0 10px;
             white-space: nowrap;
         }
-
+ 
        
         .punto-grupo {
             position: relative;
@@ -95,21 +104,21 @@
             flex-direction: column;
             align-items: center;
         }
-
+ 
         .dot-verde {
             width: 32px;
             height: 32px;
             background-color: #8ce653;
             border-radius: 50%;
         }
-
+ 
         .dot-oscuro {
             width: 22px;
             height: 22px;
             background-color: #2c3e50;
             border-radius: 50%;
         }
-
+ 
        
         .info-top {
             position: absolute;
@@ -120,7 +129,7 @@
             text-transform: uppercase;
             text-align: center;
         }
-
+ 
         .info-bottom {
             position: absolute;
             top: 35px;
@@ -130,13 +139,13 @@
             text-transform: uppercase;
             text-align: center;
         }
-
+ 
         .fecha {
             font-weight: bold;
             font-size: 14px;
             margin: 4px 0;
         }
-
+ 
         .punto-decorativo {
             color: red;
             font-weight: bold;
@@ -144,28 +153,28 @@
     </style>
 </head>
 <body>
-
+ 
    
     <div class="header-verde">
         <h1>FECHAS IMPORTANTES</h1>
     </div>
-
+ 
    
     <div class="menu-rojo">
-        <a href="#">INICIO</a>
-        <a href="#">FECHAS IMPORTANTES</a>
-        <a href="#">PERSONAJES ILUSTRES</a>
-        <a href="#">DATOS CURIOSOS Y MITOS</a>
+        <a href="index.html">INICIO</a>
+        <a href="fechasimpo.html" class="activo">FECHAS IMPORTANTES</a>
+        <a href="personajes.html">PERSONAJES ILUSTRES</a>
+        <a href="datos.html">DATOS CURIOSOS Y MITOS</a>
     </div>
-
+ 
    
     <div class="timeline-container">
         <div class="timeline">
            
             <div class="timeline-line"></div>
-
+ 
             <div class="mes-extremo">AGOSTO</div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="dot-verde"></div>
@@ -173,7 +182,7 @@
                     <div class="fecha">10 SEPTIEMBRE</div>
                 </div>
             </div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="info-top">
@@ -182,7 +191,7 @@
                 </div>
                 <div class="dot-oscuro"></div>
             </div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="dot-oscuro"></div>
@@ -191,7 +200,7 @@
                     CONMEMORACIÓN DEL GRITO DE INDEPENDENCIA.
                 </div>
             </div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="info-top" style="width: 210px; bottom: 35px;">
@@ -200,7 +209,7 @@
                 </div>
                 <div class="dot-oscuro"></div>
             </div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="dot-verde"></div>
@@ -212,7 +221,7 @@
                     </div>
                 </div>
             </div>
-
+ 
            
             <div class="punto-grupo">
                 <div class="info-top">
@@ -221,11 +230,12 @@
                 </div>
                 <div class="dot-oscuro"></div>
             </div>
-
+ 
             <div class="mes-extremo">➔ NOVIEMBRE</div>
-
+ 
         </div>
     </div>
-
+ 
 </body>
 </html>
+ 
