@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Curiosos y Mitos</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Cabecera Azul Oscuro */
+        .header-azul {
+            background-color: #2b3952;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header-azul h1 {
+            margin: 0;
+            font-size: 55px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        /* Barra de Menú Verde y Roja */
+        .menu-patrio {
+            background-color: #aa0000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 4px solid #008000;
+        }
+
+        .menu-patrio a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        /* Contenido Principal a pantalla completa */
+        .contenido-container {
+            flex: 1;
+            width: 92%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* Columna de Texto que abarca la mayoría del espacio */
+        .columna-texto {
+            flex: 1;
+            text-align: left;
+        }
+
+        .seccion-mito {
+            margin-bottom: 22px;
+        }
+
+        .titulo-mito {
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            color: #000;
+        }
+
+        .descripcion-mito {
+            font-size: 14px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+        /* Columna de Ilustraciones Patrias Oficiales */
+        .columna-ilustraciones {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            flex-shrink: 0;
+        }
+
+        .escudo-img {
+            width: 210px;
+            height: auto;
+        }
+
+        .bandera-box {
+            display: flex;
+            width: 180px;
+            height: 110px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+        }
+
+        .bandera-verde { background-color: #006847; width: 33.33%; }
+        .bandera-blanco { 
+            background-color: #ffffff; 
+            width: 33.33%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .bandera-rojo { background-color: #ce1126; width: 33.33%; }
+
+        .escudo-mini {
+            width: 32px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera Azul -->
+    <div class="header-azul">
+        <h1>DATOS CURIOSOS Y MITOS</h1>
+    </div>
+
+    <!-- Menú Rojo con borde Verde -->
+    <div class="menu-patrio">
+        <a href="#">INICIO</a>
+        <a href="#">FECHAS IMPORTANTES</a>
+        <a href="#">PERSONAJES ILUSTRES</a>
+        <a href="#">DATOS CURIOSOS Y MITOS</a>
+    </div>
+
+    <!-- Cuerpo del Contenido -->
+    <div class="contenido-container">
+        
+        <!-- Columna de Textos (Ocupa la mayor parte de la pantalla) -->
+        <div class="columna-texto">
+            
+            <div class="seccion-mito">
+                <div class="titulo-mito">EL VERDADERO GRITO</div>
+                <div class="descripcion-mito">
+                    LOS TESTIMONIOS HISTÓRICOS SEÑALAN QUE HIDALGO NO GRITÓ "¡VIVA MÉXICO!", SINO QUE LANZÓ VIVAS A LA VIRGEN DE GUADALUPE, A LA RELIGIÓN CATÓLICA Y AL REY FERNANDO VII.
+                </div>
+            </div>
+
+            <div class="seccion-mito">
+                <div class="titulo-mito">DOS ACTAS DE INDEPENDENCIA</div>
+                <div class="descripcion-mito">
+                    MÉXICO CUENTA CON DOS ACTAS. LA PRIMERA SE FIRMÓ EL 28 DE SEPTIEMBRE DE 1821 PROCLAMANDO AL IMPERIO MEXICANO, Y LA SEGUNDA SE RENOVÓ EN 1823 TRAS LA CAÍDA DE AGUSTÍN DE ITURBIDE PARA ESTABLECER EL TÉRMINO "REPÚBLICA".
+                </div>
+            </div>
+
+            <div class="seccion-mito">
+                <div class="titulo-mito">SIN RETRATO EN VIDA</div>
+                <div class="descripcion-mito">
+                    NO EXISTE NINGÚN RETRATO AUTÉNTICO DE MIGUEL HIDALGO PINTADO MIENTRAS ÉL VIVÍA; LAS IMÁGENES QUE CONOCEMOS HOY SON RECREACIONES BASADAS EN DESCRIPCIONES DE OTRAS PERSONAS.
+                </div>
+            </div>
+
+            <div class="seccion-mito">
+                <div class="titulo-mito">MITO DEL 15 DE SEPTIEMBRE</div>
+                <div class="descripcion-mito">
+                    LA REALIDAD ES QUE EL LLAMADO EN EL PUEBLO DE DOLORES OCURRIÓ EN LA MADRUGADA DEL 16 DE SEPTIEMBRE DE 1810. LA CELEBRACIÓN SE ADELANTÓ AL DÍA 15 DEBIDO A COSTUMBRES CÍVICAS Y ATRIBUCIONES HISTÓRICAS AL CUMPLEAÑOS DEL PRESIDENTE PORFIRIO DÍAZ.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Columna de Símbolos Patrios Oficiales -->
+        <div class="columna-ilustraciones">
+            
+            <!-- Escudo Nacional -->
+            <img class="escudo-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo Nacional de México">
+
+            <!-- Bandera de México -->
+            <div class="bandera-box">
+                <div class="bandera-verde"></div>
+                <div class="bandera-blanco">
+                    <img class="escudo-mini" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo">
+                </div>
+                <div class="bandera-rojo"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
