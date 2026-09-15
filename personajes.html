@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
         }
-
+ 
         body {
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
             background-color: white;
@@ -17,21 +17,21 @@
             display: flex;
             flex-direction: column;
         }
-
+ 
         /* Cabecera Roja Grande */
         .header-rojo {
             background-color: #aa0000;
             color: white;
             padding: 20px 0;
         }
-
+ 
         .header-rojo h1 {
             margin: 0;
             font-size: 55px;
             font-weight: normal;
             letter-spacing: 2px;
         }
-
+ 
         /* Barra de Menú Verde */
         .menu-verde {
             background-color: #008000;
@@ -40,14 +40,23 @@
             justify-content: space-around;
             align-items: center;
         }
-
+ 
         .menu-verde a {
             color: white;
             text-decoration: none;
             font-size: 20px;
             font-weight: normal;
         }
-
+ 
+        .menu-verde a:hover {
+            text-decoration: underline;
+        }
+ 
+        .menu-verde a.activo {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+ 
         /* Contenedor Principal de Personajes (Grid de 3 columnas) */
         .personajes-container {
             flex: 1;
@@ -59,7 +68,7 @@
             gap: 25px 20px;
             align-items: center;
         }
-
+ 
         /* Tarjeta individual de cada personaje */
         .tarjeta-personaje {
             display: flex;
@@ -67,7 +76,7 @@
             text-align: center;
             gap: 12px;
         }
-
+ 
         .tarjeta-personaje img {
             width: 110px;
             height: 140px;
@@ -77,13 +86,13 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             border: 1px solid #ddd;
         }
-
+ 
         .info-personaje {
             font-size: 11px;
             line-height: 1.25;
             text-transform: uppercase;
         }
-
+ 
         .nombre-personaje {
             font-weight: bold;
             font-size: 13px;
@@ -92,23 +101,23 @@
     </style>
 </head>
 <body>
-
+ 
     <!-- Cabecera Roja -->
     <div class="header-rojo">
         <h1>PERSONAJES ILUSTRES</h1>
     </div>
-
+ 
     <!-- Menú Verde -->
     <div class="menu-verde">
-        <a href="#">INICIO</a>
-        <a href="#">FECHAS IMPORTANTES</a>
-        <a href="#">PERSONAJES ILUSTRES</a>
-        <a href="#">DATOS CURIOSOS Y MITOS</a>
+        <a href="index.html">INICIO</a>
+        <a href="fechasimpo.html">FECHAS IMPORTANTES</a>
+        <a href="personajes.html" class="activo">PERSONAJES ILUSTRES</a>
+        <a href="datos.html">DATOS CURIOSOS Y MITOS</a>
     </div>
-
+ 
     <!-- Sección de Personajes -->
     <div class="personajes-container">
-
+ 
         <!-- 1. Miguel Hidalgo -->
         <div class="tarjeta-personaje">
             <img src="https://images.fineartamerica.com/images-medium-large-5/miguel-hidalgo-y-costilla-mexican-patriot-science-source.jpg" alt="Miguel Hidalgo" onerror="this.src='https://placehold.co/110x140/333/fff?text=Hidalgo'">
@@ -117,7 +126,7 @@
                 SACERDOTE CONOCIDO COMO EL "PADRE DE LA PATRIA", QUIEN INICIÓ LA LUCHA EL 16 DE SEPTIEMBRE DE 1810 CON EL FAMOSO GRITO DE DOLORES.
             </div>
         </div>
-
+ 
         <!-- 2. José María Morelos -->
         <div class="tarjeta-personaje">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Jos%C3%A9_Mar%C3%ADa_Morelos_%28An%C3%B3nimo%29.jpg/300px-Jos%C3%A9_Mar%C3%ADa_Morelos_%28An%C3%B3nimo%29.jpg" alt="José María Morelos" onerror="this.src='https://placehold.co/110x140/333/fff?text=Morelos'">
@@ -126,7 +135,7 @@
                 SACERDOTE Y MILITAR QUE TOMÓ EL LIDERAZGO DEL MOVIMIENTO TRAS LA MUERTE DE HIDALGO Y REDACTÓ EL DOCUMENTO SENTIMIENTOS DE LA NACIÓN.
             </div>
         </div>
-
+ 
         <!-- 3. Ignacio Allende -->
         <div class="tarjeta-personaje">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ignacio_Allende.jpg/300px-Ignacio_Allende.jpg" alt="Ignacio Allende" onerror="this.src='https://placehold.co/110x140/333/fff?text=Allende'">
@@ -135,7 +144,7 @@
                 MILITAR CRIOLLO Y COQUETE CONSPIRADOR QUE ORGANIZÓ EL MOVIMIENTO ARMADO JUNTO A HIDALGO EN LA PRIMERA ETAPA DE LA GUERRA.
             </div>
         </div>
-
+ 
         <!-- 4. Josefa Ortiz de Domínguez -->
         <div class="tarjeta-personaje">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Josefa_Ortiz_de_Dom%C3%ADnguez.jpg/300px-Josefa_Ortiz_de_Dom%C3%ADnguez.jpg" alt="Josefa Ortiz de Domínguez" onerror="this.src='https://placehold.co/110x140/333/fff?text=Corregidora'">
@@ -144,7 +153,7 @@
                 CONOCIDA COMO "LA CORREGIDORA", ALERTÓ A LOS INSURGENTES DE QUE SU CONSPIRACIÓN HABÍA SIDO DESCUBIERTA, LO QUE PRECIPITÓ EL INICIO DE LA LUCHA.
             </div>
         </div>
-
+ 
         <!-- 5. Vicente Guerrero -->
         <div class="tarjeta-personaje">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Vicente_Guerrero_1850.jpg/300px-Vicente_Guerrero_1850.jpg" alt="Vicente Guerrero" onerror="this.src='https://placehold.co/110x140/333/fff?text=Guerrero'">
@@ -153,7 +162,7 @@
                 VALIENTE LÍDER INSURGENTE DEL SUR QUE MANTUVO VIVA LA RESISTENCIA Y PACTÓ EL ABRAZO DE ACATEMPAN PARA CONSUMAR LA INDEPENDENCIA.
             </div>
         </div>
-
+ 
         <!-- 6. Agustín de Iturbide -->
         <div class="tarjeta-personaje">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Agust%C3%ADn_de_Iturbide.jpg/300px-Agust%C3%ADn_de_Iturbide.jpg" alt="Agustín de Iturbide" onerror="this.src='https://placehold.co/110x140/333/fff?text=Iturbide'">
@@ -162,8 +171,9 @@
                 MILITAR REALISTA QUE DESPUÉS FIRMÓ EL PLAN DE IGUALA Y ENTRÓ AL FRENTE DEL EJÉRCITO TRIGARANTE PARA LOGRAR LA INDEPENDENCIA DEFINITIVA.
             </div>
         </div>
-
+ 
     </div>
-
+ 
 </body>
 </html>
+ 
