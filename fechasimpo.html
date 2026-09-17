@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> <!-- inicio de head donde esta el css -->
     <meta charset="UTF-8">
     <title>Fechas Importantes</title>
-    <style>
+    <style> <!-- inicia el css -->
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
         }
  
-        body {
+        body { <!-- el css del cuerpo -->
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
             background-color: white;
             text-align: center;
@@ -18,13 +18,13 @@
             flex-direction: column;
         }
  
-       
+       <!-- el fondo del titulo verde -->
         .header-verde {
             background-color: #008000;
             color: white;
             padding: 20px 0;
         }
- 
+ <!-- Es el texto del titulo, su estilo -->
         .header-verde h1 {
             margin: 0;
             font-size: 55px;
@@ -32,7 +32,7 @@
             letter-spacing: 2px;
         }
  
-       
+       <!-- El estilo del fondo del menu de navegacion -->
         .menu-rojo {
             background-color: #aa0000;
             padding: 10px 0;
@@ -40,7 +40,7 @@
             justify-content: space-around;
             align-items: center;
         }
- 
+ <!-- es el estilo del texto de navegacion del menu -->
         .menu-rojo a {
             color: white;
             text-decoration: none;
@@ -48,15 +48,15 @@
             font-weight: normal;
         }
  
-        .menu-rojo a:hover {
+        .menu-rojo a:hover { 
             text-decoration: underline;
         }
- 
+ <!-- El texto cuando le psa el cursor -->
         .menu-rojo a.activo {
             text-decoration: underline;
             font-weight: bold;
         }
- 
+ <!-- El texto del menu al darle click -->
        
         .timeline-container {
             flex: 1;
@@ -66,7 +66,7 @@
             padding: 20px;
             overflow-x: auto;
         }
- 
+<!-- El contenedor para la linea del tiempo --> 
         .timeline {
             position: relative;
             width: 100%;
@@ -78,7 +78,7 @@
             padding: 180px 0;
         }
  
-       
+   <!-- Esta es la linea simbolica -->    
         .timeline-line {
             position: absolute;
             top: 50%;
@@ -87,7 +87,7 @@
             border-top: 3px dashed #700000;
             z-index: 1;
         }
- 
+ <!-- Este es el estilo de los meses agosto y noviembre -->
         .mes-extremo {
             font-size: 22px;
             z-index: 2;
@@ -96,7 +96,7 @@
             white-space: nowrap;
         }
  
-       
+      
         .punto-grupo {
             position: relative;
             z-index: 2;
