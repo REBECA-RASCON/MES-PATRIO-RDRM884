@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> <!-- aqui va adentro el css para darle estlio a la pagina -->
     <meta charset="UTF-8">
     <title>Datos Curiosos y Mitos</title>
     <style>
@@ -17,14 +17,14 @@
             display: flex;
             flex-direction: column;
         }
- 
+ <!-- el estilo del cuerpo en general, su apariencia -->
       
         .header-azul {
             background-color: #2b3952;
             color: white;
             padding: 20px 0;
         }
- 
+ <!-- el color del fondo y el color del titlo -->
         .header-azul h1 {
             margin: 0;
             font-size: 55px;
@@ -32,7 +32,7 @@
             letter-spacing: 2px;
         }
  
-      
+<!-- estilo de la letra del titulo -->      
         .menu-patrio {
             background-color: #aa0000;
             padding: 10px 0;
@@ -41,23 +41,23 @@
             align-items: center;
             border-top: 4px solid #008000;
         }
- 
+ <!-- aqui es donde estara el menu -->
         .menu-patrio a {
             color: white;
             text-decoration: none;
             font-size: 20px;
             font-weight: normal;
         }
- 
+<!-- aqui es cuando el cursor pasa por los enlaces --> 
         .menu-patrio a:hover {
             text-decoration: underline;
         }
- 
+<!-- aqui es el estilo despes de que se presionan los enlaces --> 
         .menu-patrio a.activo {
             text-decoration: underline;
             font-weight: bold;
         }
- 
+ <!-- aqui es para lo que se encuentra debajo del titulo -->
  
         .contenido-container {
             flex: 1;
@@ -80,7 +80,7 @@
         .seccion-mito {
             margin-bottom: 22px;
         }
- 
+<!-- donde se encuentran cada mito --> 
         .titulo-mito {
             font-weight: bold;
             font-size: 16px;
@@ -88,14 +88,14 @@
             margin-bottom: 6px;
             color: #000;
         }
- 
+<!-- Estilo de cada titulo un mito --> 
         .descripcion-mito {
             font-size: 14px;
             line-height: 1.4;
             text-transform: uppercase;
             color: #111;
         }
- 
+ <!-- Estilo de cada descripcin de un mito -->
       
         .columna-ilustraciones {
             width: 280px;
@@ -111,7 +111,7 @@
             width: 210px;
             height: auto;
         }
- 
+ <!-- proporciones y estilo de la imagen -->
         .bandera-box {
             display: flex;
             width: 180px;
@@ -134,15 +134,16 @@
             width: 32px;
             height: auto;
         }
+        <!-- estilo de la imagen que es una bandera -->
     </style>
 </head>
 <body>
- 
+<!-- inicio de la estructura html --> 
 
     <div class="header-azul">
         <h1>DATOS CURIOSOS Y MITOS</h1>
     </div>
- 
+ <!-- lo que dice el titulo -->
 
     <div class="menu-patrio">
         <a href="index.html">INICIO</a>
@@ -150,18 +151,18 @@
         <a href="personajes.html">PERSONAJES ILUSTRES</a>
         <a href="datos.html" class="activo">DATOS CURIOSOS Y MITOS</a>
     </div>
- 
+ <!-- los links que van en el menu, llevan a otras partes del sitio -->
 
     <div class="contenido-container">
-        
+  <!-- un contenedor para los mitos -->      
 
         <div class="columna-texto">
             
             <div class="seccion-mito">
-                <div class="titulo-mito">EL VERDADERO GRITO</div>
+                <div class="titulo-mito">EL VERDADERO GRITO</div> <!-- el titulo del mito (se le aplicaran estilos) -->
                 <div class="descripcion-mito">
                     LOS TESTIMONIOS HISTÓRICOS SEÑALAN QUE HIDALGO NO GRITÓ "¡VIVA MÉXICO!", SINO QUE LANZÓ VIVAS A LA VIRGEN DE GUADALUPE, A LA RELIGIÓN CATÓLICA Y AL REY FERNANDO VII.
-                </div>
+                </div> <!-- El contenido que va abajo del titulo -->
             </div>
  
             <div class="seccion-mito">
@@ -188,11 +189,11 @@
         </div>
  
   
-        <div class="columna-ilustraciones">
+        <div class="columna-ilustraciones"> <!-- una clase para las ilustraciones -->
             
    
-            <img class="escudo-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo Nacional de México">
- 
+            <img class="escudo-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo Nacional de México" 
+ <!-- un link de la imagen del escudo -->
     
             <div class="bandera-box">
                 <div class="bandera-verde"></div>
@@ -201,7 +202,7 @@
                 </div>
                 <div class="bandera-rojo"></div>
             </div>
- 
+ <!-- un link para la bandera-->
         </div>
  
     </div>
